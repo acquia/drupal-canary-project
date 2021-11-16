@@ -1,0 +1,126 @@
+{
+    "name": "acquia/drupal-recommended-project",
+    "description": "Acquia-compatible Drupal application based on the Drupal Recommended Project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Acquia Engineering",
+            "homepage": "https://www.acquia.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "acquia/acquia_cms": "^1.3.2",
+        "acquia/blt": "^13.1.1",
+        "acquia/drupal-environment-detector": "^1",
+        "acquia/http-hmac-php": "3.4.0",
+        "acquia/memcache-settings": "^1",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/mysql56": "^1.0",
+        "oomphinc/composer-installers-extender": "^1.1 || ^2"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "composer/installers": true,
+            "ergebnis/composer-normalize": true,
+            "acquia/blt": true,
+            "oomphinc/composer-installers-extender": true
+        }
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "drupal-scaffold": {
+            "allowed-packages": [
+                "acquia/acquia_cms"
+            ],
+            "file-mapping": {
+                "[profile-root]/.editorconfig": false,
+                "[profile-root]/.gitattributes": false,
+                "[profile-root]/.travis.yml": false,
+                "[profile-root]/acquia-pipelines.yml": false,
+                "[web-root]/sites/default/default.services.yml": {
+                    "mode": "replace",
+                    "overwrite": false,
+                    "path": "docroot/core/assets/scaffold/files/default.services.yml"
+                },
+                "[web-root]/sites/default/default.settings.php": {
+                    "mode": "replace",
+                    "overwrite": false,
+                    "path": "docroot/core/assets/scaffold/files/default.settings.php"
+                }
+            },
+            "gitignore": true,
+            "locations": {
+                "profile-root": "docroot/profiles/contrib/acquia_cms",
+                "web-root": "docroot/"
+            }
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {}
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "acms:install": [
+            "bash ./docroot/profiles/contrib/acquia_cms/install-acms"
+        ],
+        "nuke": [
+            "rm -rf docroot vendor composer.lock"
+        ]
+    }
+}
