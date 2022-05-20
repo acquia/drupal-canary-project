@@ -7,3 +7,6 @@ git:
     pre-commit: false
     pre-push: false
     commit-msg: false
+cm:
+  core:
+    install_from_config: true
