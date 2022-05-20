@@ -1,7 +1,21 @@
-name: polarisxap14
+name: drupal-canary-project
 recipe: acquia
 config:
   acli_version: latest
   ah_application_uuid: 15e9d7e0-33ff-49c5-a11c-0b8e224c4dd6
   ah_site_group: polarisxap14
   php: '8.0'
+proxy:
+  appserver:
+    - drupal-canary-project.lndo.site
+    - foo.drupal-canary-project.lndo.site
+    - bar.drupal-canary-project.lndo.site
+services:
+  foo:
+    type: mysql:5.7
+    config:
+      confd: lando/mysql/conf.d
+  bar:
+    type: mysql:5.7
+    config:
+      confd: lando/mysql/conf.d
