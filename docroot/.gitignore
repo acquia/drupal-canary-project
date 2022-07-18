@@ -6,3 +6,8 @@
 /autoload.php
 /index.php
 /update.php
+/.csslintrc
+/INSTALL.txt
+/example.gitignore
+/robots.txt
+/web.config
