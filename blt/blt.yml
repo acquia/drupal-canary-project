@@ -2,7 +2,7 @@ project:
   machine_name: devx-canary
 git:
   remotes:
-    - polarisxap14@svn-299.gardens.hosting.acquia.com:polarisxap14.git
+    - pipelinesvalidation2@svn-23659.prod.hosting.acquia.com:pipelinesvalidation2.git
   hooks:
     pre-commit: false
     pre-push: false
