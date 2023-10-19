@@ -43,7 +43,8 @@
             "ergebnis/composer-normalize": true,
             "oomphinc/composer-installers-extender": true,
             "phpstan/extension-installer": true,
-            "acquia/blt": true
+            "acquia/blt": true,
+            "php-http/discovery": true
         },
         "platform": {
             "php": "7.4"

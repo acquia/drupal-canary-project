@@ -2,9 +2,9 @@ name: drupal-canary-project
 recipe: acquia
 config:
   acli_version: latest
-  ah_application_uuid: 15e9d7e0-33ff-49c5-a11c-0b8e224c4dd6
-  ah_site_group: polarisxap14
-  php: '8.0'
+  ah_application_uuid: 2ed281d4-9dec-4cc3-ac63-691c3ba002c2
+  ah_site_group: pipelinesvalidation2
+  php: '8.1'
 proxy:
   appserver:
     - drupal-canary-project.lndo.site
