@@ -241,16 +241,16 @@
         },
         {
             "name": "acquia/cohesion",
-            "version": "7.3.1",
+            "version": "7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/cohesion.git",
-                "reference": "9f2cde2373bb1dd115bcb7c9d74fdcad983d08f8"
+                "reference": "49e64b0035e7e7bdb0f2c63d4372248e7906f251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/cohesion/zipball/9f2cde2373bb1dd115bcb7c9d74fdcad983d08f8",
-                "reference": "9f2cde2373bb1dd115bcb7c9d74fdcad983d08f8",
+                "url": "https://api.github.com/repos/acquia/cohesion/zipball/49e64b0035e7e7bdb0f2c63d4372248e7906f251",
+                "reference": "49e64b0035e7e7bdb0f2c63d4372248e7906f251",
                 "shasum": ""
             },
             "require": {
@@ -303,22 +303,22 @@
             ],
             "description": "Site Studio",
             "support": {
-                "source": "https://github.com/acquia/cohesion/tree/7.3.1"
+                "source": "https://github.com/acquia/cohesion/tree/7.3.2"
             },
-            "time": "2023-10-09T11:28:44+00:00"
+            "time": "2023-10-24T19:52:55+00:00"
         },
         {
             "name": "acquia/cohesion-theme",
-            "version": "7.3.1",
+            "version": "7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/cohesion-theme.git",
-                "reference": "73b97946c6778328807424116263d835b80ae5c7"
+                "reference": "194102cb6751a3a1cf212ec19be2223d4c788002"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/cohesion-theme/zipball/73b97946c6778328807424116263d835b80ae5c7",
-                "reference": "73b97946c6778328807424116263d835b80ae5c7",
+                "url": "https://api.github.com/repos/acquia/cohesion-theme/zipball/194102cb6751a3a1cf212ec19be2223d4c788002",
+                "reference": "194102cb6751a3a1cf212ec19be2223d4c788002",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -336,9 +336,9 @@
             "description": "Site Studio minimal theme",
             "support": {
                 "issues": "https://github.com/acquia/cohesion-theme/issues",
-                "source": "https://github.com/acquia/cohesion-theme/tree/7.3.1"
+                "source": "https://github.com/acquia/cohesion-theme/tree/7.3.2"
             },
-            "time": "2023-10-09T11:28:50+00:00"
+            "time": "2023-10-24T19:53:00+00:00"
         },
         {
             "name": "acquia/drupal-environment-detector",
@@ -2834,24 +2834,24 @@
         },
         {
             "name": "drupal/acquia_cms_place",
-            "version": "1.5.9",
+            "version": "1.5.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acquia_cms_place.git",
-                "reference": "1.5.9"
+                "reference": "1.5.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_cms_place-1.5.9.zip",
-                "reference": "1.5.9",
-                "shasum": "bf2da15c620e348ae6cbbc94de644c8b51f7d4a0"
+                "url": "https://ftp.drupal.org/files/projects/acquia_cms_place-1.5.10.zip",
+                "reference": "1.5.10",
+                "shasum": "2c0577979f8407fcf671e02dc6d6b92e2e6754a4"
             },
             "require": {
                 "drupal/acquia_cms_image": "^1.5.10",
                 "drupal/address": "^1.11",
                 "drupal/core": "^9.4 || ^10",
                 "drupal/field_group": "*",
-                "drupal/geocoder": "^3.31 || ^4.4",
+                "drupal/geocoder": "^3.35 || ^4.10",
                 "drupal/geocoder_address": "*",
                 "drupal/geocoder_geofield": "*",
                 "drupal/geofield": "^1.47",
@@ -2861,8 +2861,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.5.9",
-                    "datestamp": "1690199577",
+                    "version": "1.5.10",
+                    "datestamp": "1698304996",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2870,12 +2870,6 @@
                 },
                 "branch-alias": {
                     "dev-develop": "1.x-dev"
-                },
-                "enable-patching": true,
-                "patches": {
-                    "drupal/geocoder": {
-                        "3224364 - Replace deprecated boolean return in uksort() for PHP 8 compatibility.": "https://www.drupal.org/files/issues/2021-07-19/3224364-2.patch"
-                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4103,17 +4097,17 @@
         },
         {
             "name": "drupal/config_filter",
-            "version": "1.10.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "c5002f2b9dece3c684db754123936d1388b80b8d"
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "364581700ca3a298f62950ff37dd309d0bfb8381"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -4124,8 +4118,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1656936763",
+                    "version": "8.x-1.12",
+                    "datestamp": "1698308496",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4169,17 +4163,17 @@
         },
         {
             "name": "drupal/config_ignore",
-            "version": "3.0.0-rc1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_ignore.git",
-                "reference": "8.x-3.0-rc1"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-3.0-rc1.zip",
-                "reference": "8.x-3.0-rc1",
-                "shasum": "125a3d6012d1de7e3565696b3f2e1576f1554ac2"
+                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "114707c1ef70f07fdcd9b9658d657764779db8ec"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -4191,11 +4185,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-rc1",
-                    "datestamp": "1697716408",
+                    "version": "8.x-3.0",
+                    "datestamp": "1698624094",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -5429,17 +5423,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "3.34.0",
+            "version": "3.35.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "8.x-3.34"
+                "reference": "8.x-3.35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-3.34.zip",
-                "reference": "8.x-3.34",
-                "shasum": "6eb44d0b055f4239a4bd65f3fedef5829a761fce"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-3.35.zip",
+                "reference": "8.x-3.35",
+                "shasum": "3e63b48fedf4c720ec51f8c0d804bfbbbfc6829f"
             },
             "require": {
                 "davedevelopment/stiphle": "^0.9.2",
@@ -5482,8 +5476,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.34",
-                    "datestamp": "1682585666",
+                    "version": "8.x-3.35",
+                    "datestamp": "1697825623",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5524,7 +5518,7 @@
         },
         {
             "name": "drupal/geocoder_address",
-            "version": "3.34.0",
+            "version": "3.35.0",
             "require": {
                 "drupal/address": "*",
                 "drupal/core": "^8 || ^9",
@@ -5534,8 +5528,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.34",
-                    "datestamp": "1682585666",
+                    "version": "8.x-3.35",
+                    "datestamp": "1697825623",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5572,7 +5566,7 @@
         },
         {
             "name": "drupal/geocoder_field",
-            "version": "4.9.0",
+            "version": "4.10.0",
             "require": {
                 "drupal/core": "^9 || ^10",
                 "drupal/geocoder": "*"
@@ -5580,8 +5574,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.9",
-                    "datestamp": "1682585195",
+                    "version": "8.x-4.10",
+                    "datestamp": "1697825420",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5618,7 +5612,7 @@
         },
         {
             "name": "drupal/geocoder_geofield",
-            "version": "3.34.0",
+            "version": "3.35.0",
             "require": {
                 "drupal/core": "^8 || ^9",
                 "drupal/geocoder": "^3",
@@ -5628,8 +5622,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.34",
-                    "datestamp": "1682585666",
+                    "version": "8.x-3.35",
+                    "datestamp": "1697825623",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5666,17 +5660,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.55.0",
+            "version": "1.56.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.55"
+                "reference": "8.x-1.56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.55.zip",
-                "reference": "8.x-1.55",
-                "shasum": "88403ad29424e3b5aba454534fcdcd53565b11f7"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.56.zip",
+                "reference": "8.x-1.56",
+                "shasum": "edcb25304edb860d0fe907b8aa2dc73b6fc83f39"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -5685,8 +5679,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.55",
-                    "datestamp": "1692829747",
+                    "version": "8.x-1.56",
+                    "datestamp": "1698017493",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8450,17 +8444,17 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "cefe1b203b793682f74ea43e18d0a814cf768763"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "f2a074b51726de3727c1d900237d6d471806a4d2"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
@@ -8468,8 +8462,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1688015262",
+                    "version": "8.x-1.13",
+                    "datestamp": "1697885927",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8477,7 +8471,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": ">=9"
                     }
                 }
             },
@@ -11837,31 +11831,26 @@
         },
         {
             "name": "php-http/promise",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/promise.git",
-                "reference": "4c4c1f9b7289a2ec57cde7f1e9762a5789506f88"
+                "reference": "ef4905bfb492ff389eb7f12e26925a0f20073050"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/promise/zipball/4c4c1f9b7289a2ec57cde7f1e9762a5789506f88",
-                "reference": "4c4c1f9b7289a2ec57cde7f1e9762a5789506f88",
+                "url": "https://api.github.com/repos/php-http/promise/zipball/ef4905bfb492ff389eb7f12e26925a0f20073050",
+                "reference": "ef4905bfb492ff389eb7f12e26925a0f20073050",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "friends-of-phpspec/phpspec-code-coverage": "^4.3.2",
-                "phpspec/phpspec": "^5.1.2 || ^6.2"
+                "friends-of-phpspec/phpspec-code-coverage": "^4.3.2 || ^6.3",
+                "phpspec/phpspec": "^5.1.2 || ^6.2 || ^7.4"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Http\\Promise\\": "src/"
@@ -11888,22 +11877,22 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/promise/issues",
-                "source": "https://github.com/php-http/promise/tree/1.1.0"
+                "source": "https://github.com/php-http/promise/tree/1.2.0"
             },
-            "time": "2020-07-07T09:29:14+00:00"
+            "time": "2023-10-24T09:20:26+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.39",
+            "version": "1.10.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d9dedb0413f678b4d03cbc2279a48f91592c97c4"
+                "reference": "93c84b5bf7669920d823631e39904d69b9c7dc5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d9dedb0413f678b4d03cbc2279a48f91592c97c4",
-                "reference": "d9dedb0413f678b4d03cbc2279a48f91592c97c4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/93c84b5bf7669920d823631e39904d69b9c7dc5d",
+                "reference": "93c84b5bf7669920d823631e39904d69b9c7dc5d",
                 "shasum": ""
             },
             "require": {
@@ -11952,7 +11941,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-17T15:46:26+00:00"
+            "time": "2023-10-30T14:48:31+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
