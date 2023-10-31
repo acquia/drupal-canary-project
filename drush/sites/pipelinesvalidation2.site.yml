@@ -1,0 +1,48 @@
+# Application 'pipelinesvalidation2', environment 'prod'.
+prod:
+  root: /var/www/html/pipelinesvalidation2.prod/docroot
+  ac-site: pipelinesvalidation2
+  ac-env: prod
+  ac-realm: prod
+  uri: pipelinesvalidation2.prod.acquia-sites.com
+  prod.livedev:
+    parent: '@pipelinesvalidation2.prod'
+    root: /mnt/gfs/pipelinesvalidation2.prod/livedev/docroot
+  host: pipelinesvalidation2.ssh.prod.acquia-sites.com
+  user: pipelinesvalidation2.prod
+  paths:
+    drush-script: drush9
+
+
+# Application 'pipelinesvalidation2', environment 'test'.
+test:
+  root: /var/www/html/pipelinesvalidation2.test/docroot
+  ac-site: pipelinesvalidation2
+  ac-env: test
+  ac-realm: prod
+  uri: pipelinesvalidation2stg.prod.acquia-sites.com
+  test.livedev:
+    parent: '@pipelinesvalidation2.test'
+    root: /mnt/gfs/pipelinesvalidation2.test/livedev/docroot
+  host: pipelinesvalidation2stg.ssh.prod.acquia-sites.com
+  user: pipelinesvalidation2.test
+  paths:
+    drush-script: drush9
+
+
+# Application 'pipelinesvalidation2', environment 'dev'.
+dev:
+  root: /var/www/html/pipelinesvalidation2.dev/docroot
+  ac-site: pipelinesvalidation2
+  ac-env: dev
+  ac-realm: prod
+  uri: pipelinesvalidation2dev.prod.acquia-sites.com
+  dev.livedev:
+    parent: '@pipelinesvalidation2.dev'
+    root: /mnt/gfs/pipelinesvalidation2.dev/livedev/docroot
+  host: pipelinesvalidation2dev.ssh.prod.acquia-sites.com
+  user: pipelinesvalidation2.dev
+  paths:
+    drush-script: drush9
+
+
