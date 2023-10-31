@@ -101,3 +101,5 @@ deployment_identifier
 /travis_wait*
 /files-private
 .phpcs-cache
+/.editorconfig
+/.gitattributes

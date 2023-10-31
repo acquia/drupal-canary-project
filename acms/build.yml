@@ -1,0 +1,10 @@
+sites:
+  default:
+    modules:
+      - acquia_cms_search
+      - acquia_cms_tour
+      - acquia_cms_toolbar
+    starter_kit: acquia_cms_community
+    themes:
+      admin: acquia_claro
+      default: olivero
