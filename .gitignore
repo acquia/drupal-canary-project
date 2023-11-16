@@ -1,8 +1,11 @@
 # Files and directories suggested to be ignored by Drupal
-# @see https://git.drupalcode.org/project/drupal/-/blob/9.2.x/example.gitignore
+# @see https://git.drupalcode.org/project/drupal/-/blob/9.3.x/example.gitignore
+#
+# We allow settings.php to be committed since Acquia's filesystem is read-only
+# @see https://www.drupal.org/project/drupal/issues/3257119
 /docroot/core
 /vendor/
-/docroot/sites/*/settings*.php
+/docroot/sites/*/settings.*.php
 /docroot/sites/*/services*.yml
 /docroot/sites/*/files
 /docroot/sites/*/private
@@ -91,15 +94,26 @@ drush/sites/.checksums
 
 # Deprecation detector rules
 .rules
+
+# PHPCS
+.phpcs-cache
+
+# PHPUnit
+.phpunit.result.cache
+
+# Drupal check report.
+drupal-check-report.xml
+
+# Local files
 local.settings.php
 local.drush.yml
 local.site.yml
 local.services.yml
 *.local
 local.blt.yml
-deployment_identifier
-/travis_wait*
-/files-private
-.phpcs-cache
-/.editorconfig
-/.gitattributes
+
+# oauth keys
+oauth_keys/
+
+# env-file
+/.env*
