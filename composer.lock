@@ -16784,6 +16784,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "acquia/drupal-recommended-settings": 15,
         "drupal/config_sync_without_site_uuid": 10
     },
     "prefer-stable": true,

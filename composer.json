@@ -129,6 +129,8 @@
         ],
         "nuke": [
             "rm -rf docroot vendor composer.lock"
-        ]
+        ],
+        "drupal:install": "drush si minimal --existing-config",
+        "drupal:validate": "grumphp run"
     }
 }
