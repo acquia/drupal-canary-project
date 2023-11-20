@@ -253,7 +253,6 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = DRUPAL_ROOT . "/../config/default";
 
 /**
  * Settings:
@@ -282,7 +281,7 @@ $settings['config_sync_directory'] = DRUPAL_ROOT . "/../config/default";
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'eAGaCMdE9ybnYN0ZIU5UD11OqPMA8r-hJfFiSUEt-Dk11g58bXeigYcN-LrCqyw38xNZ99m37Q';
 
 /**
  * Deployment identifier.
@@ -811,3 +810,5 @@ require DRUPAL_ROOT . "/../vendor/acquia/drupal-recommended-settings/settings/ac
  *
  * @link https://docs.acquia.com/
  */
+
+$settings['config_sync_directory'] = DRUPAL_ROOT . "/../config/default";
