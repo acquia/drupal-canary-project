@@ -26,7 +26,7 @@ events:
         - setup-app:
             type: script
             script:
-              - ./vendor/bin/drush si dp || true
+              - ./vendor/bin/drush si minimal || true
               - ./vendor/bin/drush config:set system.site uuid ac0252a9-1262-4026-8f46-aadd14203816
               - ./vendor/bin/drush cim
         - tests:
