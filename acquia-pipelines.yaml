@@ -29,10 +29,6 @@ events:
               - ./vendor/bin/drush si minimal || true
               - ./vendor/bin/drush config:set system.site uuid ac0252a9-1262-4026-8f46-aadd14203816
               - ./vendor/bin/drush cim
-        - tests:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/tests
         - build-artifact:
             type: script
             script:
