@@ -17,6 +17,13 @@ events:
         - setup-env:
             type: script
             script:
+              - ls -al ~
+              - ls -al ~/.ssh
+              - cat ~/.ssh/config
+              - echo 'Host github.com' >> ~/.ssh/config
+              - echo '  KexAlgorithms ecdh-sha2-nistp256' >> ~/.ssh/config
+              - echo '  MACs hmac-sha2-512' >> ~/.ssh/config
+              - echo '  ConnectTimeout 3' >> ~/.ssh/config
               - which ssh
               - ssh -vvv git@github.com
         - validate:
