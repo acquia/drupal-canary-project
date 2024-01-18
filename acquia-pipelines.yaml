@@ -17,8 +17,10 @@ events:
         - setup-env:
             type: script
             script:
+              - ssh pipelinesvalidation2@svn-23659.prod.hosting.acquia.com || true
               - cp $SOURCE_DIR/ssh_config ~/.ssh/config
-              - ssh -vvv git@github.com
+              - ssh -vvv git@github.com || true
+              - ssh pipelinesvalidation2@svn-23659.prod.hosting.acquia.com || true
         - validate:
             type: script
             script:
