@@ -1,0 +1,7 @@
+Host *
+  StrictHostKeyChecking no
+  IdentityFile /home/local/.ssh/id_rsa_acquia_source
+Host github.com
+  KexAlgorithms ecdh-sha2-nistp256
+  MACs hmac-sha2-512
+  ConnectTimeout 3
