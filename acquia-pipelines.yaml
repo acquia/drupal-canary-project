@@ -17,12 +17,8 @@ events:
         - setup-env:
             type: script
             script:
-              - git config core.sshCommand "ssh -o ConnectTimeout=3 -o KexAlgorithms=ecdh-sha2-nistp256 -m hmac-sha2-512"
-              - git config --get core.sshCommand
-              - composer install --ansi --prefer-source -vvv
-              - source ${BLT_DIR}/scripts/pipelines/setup_env
-              # - nvm install v6.9.1 --latest-npm
-              # - npm install --global yarn
+              - which ssh
+              - ssh -vvv git@github.com
         - validate:
             type: script
             script:
