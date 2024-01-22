@@ -253,7 +253,6 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-# $settings['config_sync_directory'] = '/directory/outside/webroot';
 
 /**
  * Settings:
@@ -282,7 +281,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'eAGaCMdE9ybnYN0ZIU5UD11OqPMA8r-hJfFiSUEt-Dk11g58bXeigYcN-LrCqyw38xNZ99m37Q';
 
 /**
  * Deployment identifier.
@@ -802,12 +801,14 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
+require DRUPAL_ROOT . "/../vendor/acquia/drupal-recommended-settings/settings/acquia-recommended.settings.php";
 /**
  * IMPORTANT.
  *
  * Do not include additional settings here. Instead, add them to settings
- * included by `blt.settings.php`. See BLT's documentation for more detail.
+ * included by `acquia-recommended.settings.php`. See Acquia's documentation for more detail.
  *
- * @link https://docs.acquia.com/blt/
+ * @link https://docs.acquia.com/
  */
+
+$settings['config_sync_directory'] = DRUPAL_ROOT . "/../config/default";
