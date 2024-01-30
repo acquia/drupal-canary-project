@@ -31,6 +31,6 @@ events:
             type: script
             script:
               - mkdir /tmp/acli-push-artifact
-              - acli push:artifact --dry-run --no-clone --no-commit
+              - acli push:artifact --no-push --no-clone --no-commit
               - mv .git /tmp/acli-push-artifact/
               - shopt -s dotglob && rm -rf ./* && mv /tmp/acli-push-artifact/* ./
