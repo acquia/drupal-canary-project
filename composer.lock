@@ -136,39 +136,33 @@
         },
         {
             "name": "acquia/drupal-recommended-settings",
-            "version": "1.0.0-alpha1",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/drupal-recommended-settings.git",
-                "reference": "e3166492a991fea7771a9a80a09c84c5a6217b92"
+                "reference": "29c517dc57605b7a93c0dbe072722eaa5135851c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/drupal-recommended-settings/zipball/e3166492a991fea7771a9a80a09c84c5a6217b92",
-                "reference": "e3166492a991fea7771a9a80a09c84c5a6217b92",
+                "url": "https://api.github.com/repos/acquia/drupal-recommended-settings/zipball/29c517dc57605b7a93c0dbe072722eaa5135851c",
+                "reference": "29c517dc57605b7a93c0dbe072722eaa5135851c",
                 "shasum": ""
             },
             "require": {
                 "acquia/drupal-environment-detector": "^1.5.3",
                 "composer-plugin-api": "^2",
-                "composer/composer": "^2.5",
-                "consolidation/config": "^1.0.0 || ^2.0.0",
-                "dflydev/dot-access-data": "^1.1.0 || ^2 || ^3",
-                "drupal/config_sync_without_site_uuid": "^1.0",
-                "grasmash/yaml-expander": "^3",
+                "consolidation/config": "^2.0.0",
+                "grasmash/yaml-expander": "^3.0",
                 "loophp/phposinfo": "^1.7.1",
-                "php": ">=7.4",
-                "symfony/filesystem": "^6.2",
-                "symfony/yaml": "^4.4 || ^5 || ^6"
-            },
-            "conflict": {
-                "acquia/blt": "*"
+                "php": ">=8.1"
             },
             "require-dev": {
-                "acquia/coding-standards": "^1.0",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
-                "ergebnis/composer-normalize": "~2.15.0",
-                "phpro/grumphp-shim": "^1.5"
+                "acquia/coding-standards": "^2.0",
+                "composer/composer": "^2.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
+                "ergebnis/composer-normalize": "^2.30.2",
+                "phpro/grumphp-shim": "^2.2",
+                "phpunit/phpunit": "^9 || ^10"
             },
             "type": "composer-plugin",
             "extra": {
@@ -198,9 +192,9 @@
             "support": {
                 "docs": "https://docs.acquia.com/drupal-recommended-settings/",
                 "issues": "https://github.com/acquia/drupal-recommended-settings/issues",
-                "source": "https://github.com/acquia/drupal-recommended-settings/tree/1.0.0-alpha1"
+                "source": "https://github.com/acquia/drupal-recommended-settings/tree/1.0.0-beta1"
             },
-            "time": "2023-06-26T17:03:50+00:00"
+            "time": "2024-01-18T06:50:22+00:00"
         },
         {
             "name": "acquia/http-hmac-php",
