@@ -127,10 +127,7 @@
             "Composer\\Config::disableProcessTimeout",
             "./vendor/bin/acms acms:install"
         ],
-        "nuke": [
-            "rm -rf docroot vendor composer.lock"
-        ],
-        "drupal:install": "drush si minimal --existing-config",
+        "drupal:install": "drush si minimal",
         "drupal:validate": "grumphp run"
     }
 }
