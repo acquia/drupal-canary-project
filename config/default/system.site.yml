@@ -1,9 +1,9 @@
 _core:
   default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: en
-uuid: ac0252a9-1262-4026-8f46-aadd14203816
-name: 'My BLT site'
-mail: no-reply@example.com
+uuid: 358e182b-28d0-48c1-8909-a1fc656572a8
+name: 'Drush Site-Install'
+mail: admin@example.com
 slogan: ''
 page:
   403: ''
