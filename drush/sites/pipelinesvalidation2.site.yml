@@ -11,7 +11,7 @@ prod:
   host: pipelinesvalidation2.ssh.prod.acquia-sites.com
   user: pipelinesvalidation2.prod
   paths:
-    drush-script: drush9
+    drush-script: drush
 
 
 # Application 'pipelinesvalidation2', environment 'test'.
@@ -27,7 +27,7 @@ test:
   host: pipelinesvalidation2stg.ssh.prod.acquia-sites.com
   user: pipelinesvalidation2.test
   paths:
-    drush-script: drush9
+    drush-script: drush
 
 
 # Application 'pipelinesvalidation2', environment 'dev'.
@@ -43,6 +43,6 @@ dev:
   host: pipelinesvalidation2dev.ssh.prod.acquia-sites.com
   user: pipelinesvalidation2.dev
   paths:
-    drush-script: drush9
+    drush-script: drush
 
 

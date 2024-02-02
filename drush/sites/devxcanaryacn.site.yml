@@ -1,0 +1,39 @@
+# Application 'devxcanaryacn', environment 'dev'.
+dev:
+  root: /var/www/html/docroot
+  ac-site: devxcanaryacn
+  ac-env: dev
+  ac-realm: gardens
+  uri: devxcanaryacndev.gardens.acquia-sites.com
+  host: devxcanaryacndev.ssh.gardens.acquia-sites.com
+  user: devxcanaryacn.dev
+  paths:
+    drush-script: drush
+
+
+# Application 'devxcanaryacn', environment 'prod'.
+prod:
+  root: /var/www/html/docroot
+  ac-site: devxcanaryacn
+  ac-env: prod
+  ac-realm: gardens
+  uri: devxcanaryacnprod.gardens.acquia-sites.com
+  host: devxcanaryacnprod.ssh.gardens.acquia-sites.com
+  user: devxcanaryacn.prod
+  paths:
+    drush-script: drush
+
+
+# Application 'devxcanaryacn', environment 'stage'.
+stage:
+  root: /var/www/html/docroot
+  ac-site: devxcanaryacn
+  ac-env: stage
+  ac-realm: gardens
+  uri: devxcanaryacnstage.gardens.acquia-sites.com
+  host: devxcanaryacnstage.ssh.gardens.acquia-sites.com
+  user: devxcanaryacn.stage
+  paths:
+    drush-script: drush
+
+
