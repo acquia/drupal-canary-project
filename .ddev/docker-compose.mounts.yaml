@@ -1,0 +1,7 @@
+services:
+  web:
+    volumes:
+      - "$HOME/src/acquia/cli:/home/dane.powell/cli"
+      - "/run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock"
+    environment:
+      - SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock
