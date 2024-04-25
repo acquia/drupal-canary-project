@@ -1,4 +1,4 @@
-Acquia Drupal Canary Project
+testAcquia Drupal Canary Project
 ====
 
 This is a reference Drupal application based on the [Acquia Drupal Recommended Project](https://github.com/acquia/drupal-recommended-project). Use it to verify a working configuration if you are having problems with your own application and to test any potentially breaking changes to dependent packages.
