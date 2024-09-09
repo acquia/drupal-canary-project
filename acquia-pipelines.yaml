@@ -27,6 +27,10 @@ events:
             type: script
             script:
               - composer drupal:install
+        - test:
+            type: script
+            script:
+              - cd docroot && ../vendor/bin/phpunit -c core --group=ban
         - build-artifact:
             type: script
             script:
