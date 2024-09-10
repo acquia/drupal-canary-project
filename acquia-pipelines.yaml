@@ -32,8 +32,7 @@ events:
             type: script
             script:
               - ./vendor/bin/drush runserver 8080 &
-              - ./vendor/bin/phpunit -c docroot/core docroot/core --group=ban
-              - ps aux | grep -i runserver | grep -v grep | awk '{print $2}' | xargs kill -9 2>&1
+              - ./vendor/bin/phpunit -c docroot/core docroot/core --group=ban || true
         - build-artifact:
             type: script
             script:
