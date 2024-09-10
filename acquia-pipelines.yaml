@@ -30,7 +30,8 @@ events:
         - test:
             type: script
             script:
-              - cd docroot && ../vendor/bin/phpunit -c core --group=ban
+              - ./vendor/bin drush runserver 8080 &
+              - ./vendor/bin/phpunit -c docroot/core docroot/core --group=ban
         - build-artifact:
             type: script
             script:
