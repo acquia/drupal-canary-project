@@ -3,7 +3,7 @@
 set -ev
 
 drush updb
-drush config:set system.site uuid ac0252a9-1262-4026-8f46-aadd14203816
+drush config:set system.site uuid c03747b2-962a-48e7-927f-72073ca9a0dc
 drush cim
 drush cr
 
