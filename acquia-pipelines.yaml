@@ -12,4 +12,4 @@ events:
         - setup-env:
             type: script
             script:
-              - echo "first commit"
+              - echo "second commit"
