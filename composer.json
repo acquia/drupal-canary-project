@@ -22,11 +22,13 @@
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-recommended": "^10",
         "drush/drush": "^12",
-        "oomphinc/composer-installers-extender": "^2"
+        "oomphinc/composer-installers-extender": "^2",
+        "phpro/grumphp": "^2.17"
     },
     "require-dev": {
         "acquia/coding-standards": "^3",
-        "drupal/core-dev": "^10.2"
+        "drupal/core-dev": "^10.2",
+        "php-parallel-lint/php-parallel-lint": "^1.4"
     },
     "config": {
         "allow-plugins": {
@@ -37,6 +39,7 @@
             "drupal/core-composer-scaffold": true,
             "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true,
+            "phpro/grumphp": true,
             "phpstan/extension-installer": true,
             "tbachert/spi": true
         },
