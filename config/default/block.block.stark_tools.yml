@@ -1,4 +1,4 @@
-uuid: 72d2d69c-2bf3-4d14-9e62-e093e188aa15
+uuid: b2caa420-28fa-4d90-9a68-0bdad9b06147
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   theme:
     - stark
 _core:
-  default_config_hash: UL5ZZvI0Lnp3fmVmhIDxvNI9RlMD0sfBIOi9ozr-k5o
+  default_config_hash: 21gTvrC3-X1nBOt2rLuxMV9LqgyW8pnzfKXMeq-dnPI
 id: stark_tools
 theme: stark
 region: sidebar_first
@@ -22,6 +22,6 @@ settings:
   label_display: visible
   provider: system
   level: 1
-  depth: 0
+  depth: null
   expand_all_items: false
 visibility: {  }

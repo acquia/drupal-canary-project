@@ -1,11 +1,11 @@
-uuid: 3b7ba31f-ab61-4285-bc57-e50eee5bd952
+uuid: c8f78fcd-9718-4b9b-a621-3dc0775e8420
 langcode: en
 status: true
 dependencies:
   theme:
     - stark
 _core:
-  default_config_hash: 8mkaE7jcF0IRf6Yj-5fJ1gBi-SGIobPcGD0wS5tM8Yk
+  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
 id: stark_page_title
 theme: stark
 region: content
@@ -17,5 +17,4 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-  base_route_title: false
 visibility: {  }
