@@ -14,28 +14,15 @@ variables:
 events:
   build:
     steps:
-        - setup-env:
+        - step1:
             type: script
             script:
-              - composer validate --no-check-all --ansi
-              - composer install --ansi
-              - mysql -u root -proot -e "CREATE DATABASE IF NOT EXISTS drupal"
-        - validate:
+              - echo "step 1a"
+        - step1:
             type: script
             script:
-              - composer drupal:validate
-        - setup-app:
+              - echo "step 1b"
+        - step2:
             type: script
             script:
-              - composer drupal:install
-        - test:
-            type: script
-            script:
-              - ./vendor/bin/drush runserver 8080 &
-              - ./vendor/bin/phpunit -c docroot/core docroot/core --group=ban || true
-        - build-artifact:
-            type: script
-            script:
-              - mkdir /tmp/acli-push-artifact
-              - acli push:artifact --no-push --no-clone --no-commit
-              - shopt -s dotglob && rm -rf ./* && mv /tmp/acli-push-artifact/* ./
+              - echo "step 2"
