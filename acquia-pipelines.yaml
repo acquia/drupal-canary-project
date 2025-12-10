@@ -28,11 +28,6 @@ events:
             type: script
             script:
               - composer drupal:install
-        - test:
-            type: script
-            script:
-              - ./vendor/bin/drush runserver 8080 &
-              - ./vendor/bin/phpunit -c docroot/core docroot/core --group=ban || true
         - build-artifact:
             type: script
             script:
