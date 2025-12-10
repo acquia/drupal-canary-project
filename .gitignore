@@ -10,7 +10,7 @@
 /docroot/sites/*/files
 /docroot/sites/*/private
 /docroot/sites/simpletest
-
+.pipeline
 # Directories specific to this template
 /docroot/libraries
 /docroot/modules/contrib
